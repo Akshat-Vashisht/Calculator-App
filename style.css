@@ -1,0 +1,78 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* All elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+input {
+    grid-column: span 4;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+    color: #fff;
+    cursor: pointer;
+    width: 80%;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+button {
+    border: none;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: #505050;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Specific CSS */
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    border: 1px solid #717377;
+    border-radius: 16px;
+    background-color: #1C1C1C;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    height: 80%;
+    padding: 2rem;
+}
+
+
+.orange {
+    background-color: #FF9500;
+}
+
+.gray {
+    background-color: #D4D4D2;
+    color: #1C1C1C;
+}
+
+.zero {
+    grid-column: span 2;
+    border-radius: 35px;
+    text-align: left;
+    padding: 1rem;
+}
